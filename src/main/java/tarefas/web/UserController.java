@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import tarefas.dao.UserDao;
 import tarefas.model.User;
 
-@WebServlet("/register")
+@WebServlet("/")
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private UserDao userDao;
