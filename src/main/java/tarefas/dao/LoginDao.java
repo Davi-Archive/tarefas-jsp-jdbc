@@ -16,7 +16,7 @@ public class LoginDao {
 
 		Class.forName("com.mysql.jdbc.Driver");
 
-		try (Connection connection = JDBCUtils.geConnection();
+		try (Connection connection = JDBCUtils.getConnection();
 
 				PreparedStatement preparedStatement = connection
 						.prepareStatement("select * from users where usename = ? and password = ?")) {

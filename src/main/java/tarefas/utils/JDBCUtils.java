@@ -12,7 +12,7 @@ public class JDBCUtils {
 	private static String jdbcUsername = "root";
 	private static String jdbcPassword = "root";
 
-	public static Connection geConnection() {
+	public static Connection getConnection() {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");

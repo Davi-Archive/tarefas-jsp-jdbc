@@ -14,7 +14,7 @@ public class UserDao {
 
 		int result = 0;
 
-		try (Connection connection = JDBCUtils.geConnection()) {
+		try (Connection connection = JDBCUtils.getConnection()) {
 			PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL);
 			
 			preparedStatement.setString(1, employee.getFirstName());
