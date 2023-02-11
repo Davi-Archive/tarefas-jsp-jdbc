@@ -25,7 +25,7 @@ public class JDBCUtils {
 		return connection;
 	}
 
-	public static void printSQLEXception(SQLException ex) {
+	public static void printSQLException(SQLException ex) {
 		for (Throwable throwable : ex) {
 			if (throwable instanceof SQLException) {
 				throwable.printStackTrace();
