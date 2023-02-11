@@ -26,7 +26,7 @@ public class UserDao {
 			result = preparedStatement.executeUpdate();
 			
 		} catch (SQLException e) {
-			JDBCUtils.printSQLEXception(e);
+			JDBCUtils.printSQLException(e);
 		}
 		
 		return result;
