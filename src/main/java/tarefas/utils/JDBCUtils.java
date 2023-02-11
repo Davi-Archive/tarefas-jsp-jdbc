@@ -29,8 +29,10 @@ public class JDBCUtils {
 		for (Throwable throwable : ex) {
 			if (throwable instanceof SQLException) {
 				throwable.printStackTrace();
-				System.out.println("SQL State: " + ((SQLException) throwable).getSQLState());
-				System.out.println("Error Code: " + ((SQLException) throwable).getSQLState());
+				System.out.println("SQL State: " + ((SQLException) throwable)
+						.getSQLState());
+				System.out.println("Error Code: " + ((SQLException) throwable)
+						.getSQLState());
 				System.out.println("Message " + throwable.getMessage());
 				Throwable t = ex.getCause();
 				while (t != null) {
