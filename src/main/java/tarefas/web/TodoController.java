@@ -15,7 +15,7 @@ import tarefas.dao.TodoDao;
 import tarefas.dao.TodoDaoImpl;
 import tarefas.model.Todo;
 
-@WebServlet("/")
+@WebServlet("/todo")
 public class TodoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private TodoDao todoDAO;

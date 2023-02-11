@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import tarefas.dao.UserDao;
 import tarefas.model.User;
 
-@WebServlet("/")
+@WebServlet("/register")
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private UserDao userDao;
@@ -30,7 +30,7 @@ public class UserController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.sendRedirect("/tarefas/register/register.jsp");
+		response.sendRedirect("/TodoList/register/register.jsp");
 	}
 
 	private void register(HttpServletRequest request, HttpServletResponse response)
